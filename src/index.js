@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   function deleteTask(task){
-    const counter;
+    let counter;
     for(let i =0 ; i< taskList.length ; i++){
       if(taskList[i]=== task){
         counter = i;
