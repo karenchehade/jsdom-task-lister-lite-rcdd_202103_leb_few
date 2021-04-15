@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const taskList = [];
+  const taskList = ["love"];
   const form = document.getElementById("create-task-form");
   form.addEventListener("submit", (e)=>{
     const newTask = document.getElementById("new-task-description").value;
@@ -21,4 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     taskList.splice(counter , 1);
   }
+
+  console.log(deleteTask("love"));
 });
