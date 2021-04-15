@@ -11,4 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     addTask.appendChild(li);
     event.preventDefault();
   })
+
+  function deleteTask(task){
+    const counter;
+    for(let i =0 ; i< taskList.length ; i++){
+      if(taskList[i]=== task){
+        counter = i;
+      }
+    }
+    taskList.splice(counter , 1);
+  }
 });
