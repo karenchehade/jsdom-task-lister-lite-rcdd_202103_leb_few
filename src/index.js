@@ -27,9 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
        }
      }
      taskList.splice(counter , 1);
+     console.log(taskList);
    });
-
-   console.log(deleteTask("love"));
-
-
 });
