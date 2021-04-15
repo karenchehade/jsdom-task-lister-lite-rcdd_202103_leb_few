@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
   })
 
-  btnDelete.addEventListener("click",deleteTask(task){
+  btnDelete.addEventListener("click",(event)=>{
      let counter;
      for(let i =0 ; i< taskList.length ; i++){
        if(taskList[i]=== task){
