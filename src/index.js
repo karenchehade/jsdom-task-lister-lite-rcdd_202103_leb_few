@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
        }
      }
      taskList.splice(counter , 1);
-   }
+   });
 
    console.log(deleteTask("love"));
 
