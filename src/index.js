@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let btnDelete = document.createElement('input');
     btnDelete.type = "button";
     btnDelete.id = "delete-button";
-    btnDelete.value = "delete";s
+    btnDelete.value = "delete";
     li.appendChild(btnDelete);
     addTask.appendChild(li);
 
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
      }
 
      console.log(deleteTask("love"));
-    
+
     event.preventDefault();
   })
 
 
- 
+
 });
