@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const task = [];
+  const taskList = [];
   const form = document.getElementById("create-task-form");
   form.addEventListener("submit", (e)=>{
     const newTask = document.getElementById("new-task-description").value;
-    task.push(newTask);
+    taskList.push(newTask);
+    console.log(taskList);
     const addTask = document.getElementById("tasks");
     li.textContent = newTask;
         // add it to the ul element
