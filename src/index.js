@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const addTask = document.getElementById("tasks");
     let li = document.createElement('li');
     li.textContent = newTask;
+    let btnDelete = document.createElement('button');
+    btnDelete.id = "delete-button";
+    li.appendChild(btnDelete);
     addTask.appendChild(li);
     event.preventDefault();
   })
