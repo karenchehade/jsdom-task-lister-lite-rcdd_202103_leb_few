@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const addTask = document.getElementById("tasks");
     addTask.innterHTML = "<ul><li>" + newTask +;
     //addTask.innerText += newTask + "  ";
-    addTask.innterHTML += "</li></ul>";
+    addTask.innterHTML = "</li></ul>";
     event.preventDefault();
   })
 });
