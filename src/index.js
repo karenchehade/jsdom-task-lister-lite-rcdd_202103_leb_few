@@ -11,21 +11,25 @@ document.addEventListener("DOMContentLoaded", () => {
     let btnDelete = document.createElement('input');
     btnDelete.type = "button";
     btnDelete.id = "delete-button";
-    btnDelete.value = "delete";
+    btnDelete.value = "delete";s
     li.appendChild(btnDelete);
     addTask.appendChild(li);
+
+    btnDelete.addEventListener("click",deleteTask(task){
+       let counter;
+       for(let i =0 ; i< taskList.length ; i++){
+         if(taskList[i]=== task){
+           counter = i;
+         }
+       }
+       taskList.splice(counter , 1);
+     }
+
+     console.log(deleteTask("love"));
+    
     event.preventDefault();
   })
 
-  function deleteTask(task){
-    let counter;
-    for(let i =0 ; i< taskList.length ; i++){
-      if(taskList[i]=== task){
-        counter = i;
-      }
-    }
-    taskList.splice(counter , 1);
-  }
 
-  console.log(deleteTask("love"));
+ 
 });
