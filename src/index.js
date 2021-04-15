@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
      }
 
      console.log(deleteTask("love"));
-    
+
     event.preventDefault();
   })
 
 
- 
+
 });
