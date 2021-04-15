@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     li.appendChild(btnDelete);
     addTask.appendChild(li);
 
-  
+
     event.preventDefault();
   })
 
