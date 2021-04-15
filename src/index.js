@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     li.textContent = newTask;
     let btnDelete = document.createElement('button');
     btnDelete.id = "delete-button";
+    btnDelete.value = "delete";
     li.appendChild(btnDelete);
     addTask.appendChild(li);
     event.preventDefault();
