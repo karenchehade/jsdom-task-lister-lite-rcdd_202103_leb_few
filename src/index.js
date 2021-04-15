@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const newTask = document.getElementById("new-task-description").value;
     task.push(newTask);
     const addTask = document.getElementById("tasks");
-    addTask.innterHTML += "<li>" + newTask + "</li>";
+    li.textContent = newTask;
+        // add it to the ul element
+        addTask.appendChild(li);
+    //addTask.innterHTML += "<li>" + newTask + "</li>";
     //addTask.innerText += newTask + "  ";
     //addTask.innterHTML = "</li></ul>";
     event.preventDefault();
